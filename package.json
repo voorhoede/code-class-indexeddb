@@ -1,0 +1,29 @@
+{
+  "name": "code-class-indexeddb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "node index.js < README.md > index.html",
+    "start": "npx serve ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/voorhoede/code-class-indexeddb"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "author": "De Voorhoede",
+  "license": "ISC",
+  "dependencies": {
+    "@mapbox/rehype-prism": "0.2.0",
+    "rehype-document": "2.1.0",
+    "rehype-format": "2.3.0",
+    "rehype-stringify": "4.0.0",
+    "remark-parse": "5.0.0",
+    "remark-rehype": "3.0.1",
+    "unified": "7.0.0",
+    "unified-stream": "1.0.2"
+  }
+}
