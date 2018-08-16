@@ -14,7 +14,7 @@ body {
 	font-family: "IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans",sans-serif;
 	line-height: 1.45;
 	padding: 1rem;
-	font-feature-settings: "kern", "liga";
+	font-feature-settings: "kern", "liga", "ss01", "ss02";
 	max-width: 32rem;
 	margin: 0 auto;
 }
@@ -39,6 +39,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, figure, pre {
 }
 
 h1 {
+	margin-top: 2em;
 	font-size: 1.5em;
 	text-align: left;
 	margin-left: -2px;
@@ -65,7 +66,8 @@ code {
 	padding: 0.125em 0.25em;
 	border-radius: 0.25em;
 	border: 1px solid #ddd;
-	font-feature-settings: "kern";
+	font-feature-settings: "kern", "ss02";
+	color: #fe4365;
 }
 
 html.night-mode code {
@@ -77,7 +79,7 @@ pre {
 	padding: 0.5em 1em;
 	background: #231f20;
 	border-radius: 0.25em;
-	overflow: none;
+	overflow: scroll;
 	word-wrap: break-word;
 	font-feature-settings: "kern";
 }
@@ -93,6 +95,7 @@ pre code {
 	background: transparent;
 	border: none;
 	border-radius: none;
+	-webkit-font-smoothing: antialiased;
 }
 
 html.night-mode pre code {
@@ -141,6 +144,10 @@ a {
 	color: #1693A5;
 }
 
+a:not(:empty)[href^=http]:after {
+	content: "↗"
+}
+
 hr {
 	height: 3px;
 	border: none;
@@ -183,7 +190,6 @@ table {
 }
 
 th, td {
-	font-family: "Chivo", sans-serif;
 	font-feature-settings: "tnum";
 }
 
